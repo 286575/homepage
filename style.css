@@ -53,10 +53,28 @@ form{
 .circle{
     height:350px;
     width:350px;
-    background-image:url("file:///Users/286575/Downloads/background.jpg");
+    background-image:url("https://lh3.googleusercontent.com/a/ACg8ocKG2QcuFmXVAWRe-bLG4GlxTAwmGmdB0AePECGWsdFTajVEydk=s576-c-no");
     background-size:cover;
     background-repeat:no-repeat;
     border-radius:50%;
     margin: 0 auto;
     position:relative;
+}
+h1{
+   font-size:75px;
+   font-family: "Montserrat", serif;
+   font-optical-sizing:auto;
+   font-weight: <weight>;
+   font-style:normal;
+   letter-spacing:-4px;
+   color:white;
+}
+h2{
+   font-size:25px;
+   color:white;
+   font-family: "Montserrat", serif;
+   font-optical-sizing:auto;
+   font-weight: <weight>;
+   font-style:normal;
+   letter-spacing:2px;
 }
