@@ -1,0 +1,62 @@
+body{
+    text-align:center;
+    background: rgb(62,3,93);
+    background: linear-gradient(90deg, rgba(62,3,93,1) 0%, rgba(225,161,233,1) 50%, rgba(62,3,93,1) 100%);  
+}
+
+/*
+=================================================
+SEARCH
+=================================================
+*/
+form{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+ }
+ input{
+    width:100%;
+    font-size:32px;
+    margin:5px 0;
+    border:5px solid rgba(185, 72, 213, 0.481);
+    padding:10px;
+    outline:none;
+    display:inline-block;
+ }
+ .search-bar{
+    width:80%;
+    margin-top:100px;
+ }
+ .submit-button{
+    width:15%;
+    background:#000;
+    color:#FFF;
+ }
+ .bookmarks a{
+    text-decoration: none;
+ }
+ .bookmarks{
+    padding:30px;
+    clear:both;
+ }
+ .bookmarks i{
+    font-size:42px;
+    margin:0 20px;
+    color:#000000;
+    transition:.15s;
+    vertical-align: top;
+ }
+ .bookmarks i:hover{
+    font-size:72px;
+    position:relative;
+ }
+.circle{
+    height:350px;
+    width:350px;
+    background-image:url("file:///Users/286575/Downloads/background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    border-radius:50%;
+    margin: 0 auto;
+    position:relative;
+}
