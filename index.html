@@ -13,22 +13,24 @@
         <title>Julian's Homepage</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="startTime()">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <h1>Hello Julian!</h1>
         <h2>We've been waiting for you...</h2>
+        <h3> FC UNITED BALLER </h3>
         <div class="circle"></div>
 
         <!-- GOOGLE SEARCH -->
-<form action="https://google.com/search" method="get" target="_blank">
-    <input type="hidden" name="sitesearch" />
-    <input type="text" name="q" placeholder="Search..." class="search-bar"/>
-    <input type="submit" value="GO" class="submit-button">
- </form>
+        <form action="https://google.com/search" method="get" target="_blank">
+            <input type="hidden" name="sitesearch" />
+            <input type="text" name="q" placeholder="Search..." class="search-bar"/>
+            <input type="submit" value="GO" class="submit-button">
+        </form>
  
         
         <script src="myScripts.js" async defer></script>
@@ -40,31 +42,34 @@
             <a href="https://open.spotify.com/user/31jnokicc4xkg3db4a2uw2vdmfwq" target="_blank">
             <i class="fab fa-spotify"></i>
             </a>
-                   <i class="fas fa-sticky-note" onclick="showNote()"></i>
-                   <i class="fas fa-calculator" onclick="showCalculator()"></i>
-            </section>
+            <i class="fas fa-sticky-note" onclick="showNote()"></i>
+            <i class="fas fa-calculator" onclick="showCalculator()"></i>
+            <i class="fas fa-gamepad" onclick="showApp()"></i>
+        </section>
+
+        <!-- CALCULATOR -->
+        <iframe width="219" height="302" id="calc"
+        src="http://calculator-1.com/outdoor/?f=0274C8&r=666666" scrolling="no" frameborder="0"></iframe>
+
+
+        <!-- POST IT NOTE (IN HTML) -->
+        <textarea placeholder="Write a note..." id="note" onkeyup="autoSave()"></textarea>
+
+        <!-- ADD THIS TO YOUR INDEX.HTML -->
+        <div class="app-wrapper" id="app">
+            <i class="far fa-times-circle exit" onclick="hideApp()"></i>
+            <iframe src="https://www.crazygames.com/embed/tap-tap-shots" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+        </div>
+    
+
+
+        <div id="clock"></div>
+
+        <!-- Make a file called myScripts.js in parent directory -->
+        <script src="myScripts.js"></script>
     </body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
 </html>
-<!-- Make a file called myScripts.js in parent directory -->
-<script src="myScripts.js"></script>
-</body>
 
-<!-- Make a file called myScripts.js in parent directory -->
-<script src="myScripts.js"></script>
-</body>
-
-<body onload="startTime()">
-
-<div id="clock"></div>
-
-<!-- CALCULATOR -->
-<iframe width="219" height="302" id="calc"
-src="http://calculator-1.com/outdoor/?f=0274C8&r=666666" scrolling="no" frameborder="0"></iframe>
-
-<!-- May set custom colors at calculator-1.com/widgets/ --> 
-
- <!-- POST IT NOTE (IN HTML) -->
-<textarea placeholder="Write a note..." id="note" onkeyup="autoSave()"></textarea>
 
 

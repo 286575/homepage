@@ -53,21 +53,21 @@ form{
     position:relative;
  }
 .circle{
-    height:350px;
-    width:350px;
+    height:250px;
+    width:250px;
     background-image:url("https://lh3.googleusercontent.com/a/ACg8ocKG2QcuFmXVAWRe-bLG4GlxTAwmGmdB0AePECGWsdFTajVEydk=s576-c-no");
     background-size:cover;
     background-repeat:no-repeat;
     border-radius:50%;
     margin: 0 auto;
     position:relative;
-    border: black 15px solid
+    border: black 10px solid
 }
 h1{
    font-size:75px;
    font-family: "Montserrat", serif;
    font-optical-sizing:auto;
-   font-weight: <weight>;
+   font-weight:normal;
    font-style:normal;
    letter-spacing:-4px;
    color:black;
@@ -77,13 +77,38 @@ h2{
    color:black;
    font-family: "Montserrat", serif;
    font-optical-sizing:auto;
-   font-weight: <weight>;
+   font-weight: normal;
    font-style:normal;
    letter-spacing:2px;
 }
-<script src="myScripts.js"></script>
-</body>
 
+/*
+=================================================
+APP WRAPPER
+=================================================
+*/
+.app-wrapper{
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background:#FFF;
+ }
+ #app{
+   z-index:-1;
+   opacity:0;
+   transition:.2s;
+ }
+ 
+ .exit{
+   position:absolute;
+   top:10px;
+   right:10px;
+   cursor:pointer;
+   color:#999;
+ }
+ 
 
 /*
 =================================================
@@ -112,4 +137,13 @@ POST-IT NOTE (IN CSS)
    opacity:0;
   }
 
-  
+h3{
+   font-size:15px;
+   color:black;
+   font-family:sans-serif;
+
+}
+#clock{
+   font-size:150px;
+   font-family:sans-serif;
+}
